@@ -1,12 +1,12 @@
-// Audio Context Synthesizer (Zero external dependencies)
-let audioCtx = null;
-
-const hitAudio = new Audio('./assets/hit.wav');
+const hitAudio = new Audio('./assets/hit.mp3');
 
 function playHitSound() {
     hitAudio.currentTime = 0;
     hitAudio.play().catch(e => console.log("Audio play blocked by browser."));
 }
+
+playHitSound()
+
 // Canvas & Layout Configuration
 const canvas = document.getElementById('hit-canvas');
 const ctx = canvas.getContext('2d');
