@@ -5,7 +5,7 @@ function playHitSound() {
     hitAudio.play().catch(e => console.log("Audio play blocked by browser."));
 }
 
-playHitSound()
+playHitSound();
 
 // Canvas & Layout Configuration
 const canvas = document.getElementById('hit-canvas');
